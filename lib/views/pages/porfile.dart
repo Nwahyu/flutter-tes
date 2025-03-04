@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+  final int index;
+
+  const ProfilePage({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {
-    return const Text('ini tampilan profile');
+    return Text('ini tampilan profile $index');
   }
 }
